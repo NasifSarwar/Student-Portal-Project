@@ -1,0 +1,57 @@
+@extends('layouts.master')
+
+@section('content')
+    <!-- Start gallery  -->
+    <section id="mu-gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-gallery-area">
+                        <!-- start title -->
+                        <div class="mu-title">
+                            <h2>আসন্ন প্রশিক্ষণের তালিকা </h2>
+
+                        </div>
+                        <!-- end title -->
+                        <!-- start gallery content -->
+                        <div class="mu-gallery-content">
+                            <div class="mu-gallery-body">
+                                <ul id="mixit-container" class="row">
+                                    <!-- start single gallery image -->
+                                    <div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th><center>শিরোনাম</center></th>
+      <th><center>তারিখ</center></th>
+      <th><center>স্থান</center></th>
+      <th><center>মন্তব্য</center></th>
+    </tr>
+     @foreach($events as $event)
+    <tr>
+      <td><center>{{$event->title_bn}}</center></td>
+      <td><center>{{$event->date}}</center></td>
+      <td><center>{{$event->place_bn}}</center></td>
+      <td><center>{{$event->comments_bn}}</center></td>
+
+    </tr>
+   @endforeach
+  </table>
+
+
+</div>
+                                </ul>
+                                <br>
+                                {{ $events->links('pagination::bootstrap-4')}}
+
+                            </div>
+                        </div>
+                        <!-- end gallery content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End gallery  -->
+
+@endsection
+
