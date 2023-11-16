@@ -35,7 +35,7 @@
 						<div class="course-box">
 							<h3>Carrier Guideline</h3>
 
-							<button onclick="window.location.href='images/{{$docs->filename}}';">download pdf</button>
+							<button onclick="window.location.href='#';">download pdf</button>
 						</div>
 					</header>
 					<article>
