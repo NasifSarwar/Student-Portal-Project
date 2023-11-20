@@ -69,6 +69,20 @@ body {
     font-family: 'SolaimanLipi', Arial, sans-serif !important;
 }
 
+#sidebarToggleTop{
+  text-decoration: none !important;
+}
+
+.nav-link:hover, .collapse-item:hover, .dropdown-item:hover{
+  color: #fff !important;
+  background: #6777ef !important;
+}
+.nav-link:hover i{
+  color: #fff !important;
+}
+.card-body:hover{
+  background: #f0fff8 !important;
+}
 
 
 </style>
@@ -79,7 +93,7 @@ body {
   <div id="wrapper">
     <!-- Sidebar -->
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background: linear-gradient(to right, #ff00cc, #333399) !important;" href="/user_dashboard">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background: linear-gradient(to right, #333399, #ff00cc) !important;" href="/user_dashboard">
         <div class="sidebar-brand-icon">
        <h3 style="color: #E6FFFD; font-family:monaco"> <b><i>Student Portal</i></b> </h3>
         </div>
@@ -147,7 +161,7 @@ body {
         <!-- TopBar -->
         <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top" style="background: linear-gradient(to right, #ff00cc, #333399) !important;">
           <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="ri-menu-fold-fill"></i>
+            <i id="toggleIcon" class="ri-menu-fold-fill"></i>
           </button>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown no-arrow">
