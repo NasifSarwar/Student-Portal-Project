@@ -15,7 +15,13 @@
     <link href="{{url('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -64,8 +70,20 @@ body {
     font-family: 'SolaimanLipi', Arial, sans-serif !important;
 }
 
+#sidebarToggleTop{
+  text-decoration: none !important;
+}
 
-
+.nav-link:hover, .collapse-item:hover, .dropdown-item:hover{
+  color: #fff !important;
+  background: #6777ef !important;
+}
+.nav-link:hover i{
+  color: #fff !important;
+}
+.card-body:hover{
+  background: #f0fff8 !important;
+}
 </style>
 
 </head>
@@ -74,9 +92,9 @@ body {
   <div id="wrapper">
     <!-- Sidebar -->
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background-color: #BF7EDC !important;" href={{ url('/admin_dashboard') }}>
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background: linear-gradient(to right, #ff00cc, #333399) !important;" href={{ url('/admin_dashboard') }}>
         <div class="sidebar-brand-icon">
-       <h3> <b><i>SWE</i></b> </h3>
+       <h3 style="color: #E6FFFD; font-family:monaco"> <b><i>Student Portal</i></b> </h3>
         </div>
         <div class="sidebar-brand-text mx-3"></div>
       </a>
@@ -261,9 +279,9 @@ body {
     <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
         <!-- TopBar -->
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top" style="background-color: #BF7EDC !important;">
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top" style="background: linear-gradient(to right, #333399, #ff00cc) !important;">
           <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
+            <i id="toggleIcon" class="ri-menu-fold-fill"></i>
           </button>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown no-arrow">
@@ -362,11 +380,19 @@ body {
     <i class="fas fa-angle-up"></i>
   </a>
 
+
   <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{url('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{url('vendor/jquery-easing/jquery.easing.min.js')}}"></script>
   <script src="{{url('js/ruang-admin.min.js')}}"></script>
   <script src="{{url('vendor/chart.js/Chart.min.js')}}"></script>
   <script src="{{url('js/demo/chart-area-demo.js')}}"></script>
+  <script>
+  $(document).ready(function() {
+    $('#sidebarToggleTop').on('click', function() {
+        $('#toggleIcon').toggleClass('ri-menu-fold-fill ri-menu-unfold-fill');
+    });
+});
+</script>
 </body>
 </html>

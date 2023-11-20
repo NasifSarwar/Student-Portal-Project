@@ -14,7 +14,13 @@
     <link href="{{url('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -73,9 +79,9 @@ body {
   <div id="wrapper">
     <!-- Sidebar -->
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background-color: #BF7EDC !important;" href="/user_dashboard">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background: linear-gradient(to right, #ff00cc, #333399) !important;" href="/user_dashboard">
         <div class="sidebar-brand-icon">
-       <h3> <b><i>SWE</i></b> </h3>
+       <h3 style="color: #E6FFFD; font-family:monaco"> <b><i>Student Portal</i></b> </h3>
         </div>
         <div class="sidebar-brand-text mx-3"></div>
       </a>
@@ -139,9 +145,9 @@ body {
     <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
         <!-- TopBar -->
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top" style="background-color: #BF7EDC !important;">
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top" style="background: linear-gradient(to right, #ff00cc, #333399) !important;">
           <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
+            <i class="ri-menu-fold-fill"></i>
           </button>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown no-arrow">
