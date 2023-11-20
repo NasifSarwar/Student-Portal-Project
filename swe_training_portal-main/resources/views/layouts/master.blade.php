@@ -57,8 +57,8 @@
 <body>
 	<div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
 		<header class="site-header">
-			<div class="top-header">
-				<div class="container">
+			<div class="top-header" style="background: linear-gradient(to right, #333399, #ff00cc);">
+				<div class="container" >
 					<div class="top-header-left">
 						<div class="top-header-block">
 							<a href="mailto:info@studentportal.com" itemprop="email"><i class="fas fa-envelope"></i>info@studentportal.com</a>
@@ -74,7 +74,7 @@
 								<li><a target="_blank" href="https://daffodilvarsity.edu.bd"><i class="fab fa-google-plus-g"></i></a></li>
 								<li><a target="_blank" href="https://www.facebook.com/daffodilvarsity.edu.bd"><i class="fab fa-facebook-square"></i></a></li>
 								
-								<li><a target="_blank" href=https://twitter.com/daffodilvarsity"><i class="fab fa-twitter"></i></a></li>
+								<li><a target="_blank" href="https://twitter.com/daffodilvarsity"><i class="fab fa-twitter"></i></a></li>
 								
 							</ul>
 						</div>
@@ -88,24 +88,21 @@
 			<div class="main-header">
 				<div class="container">
 					<div class="logo-wrap" itemprop="logo">
-						<img src="{{asset('images/logo.png')}}" height="60px" width="120px" alt="Logo Image">
+						<img src="{{asset('images/logo.png')}}" height="60px" width="180px" alt="Logo Image">
 						<!-- <h1>Education</h1> -->
 					</div>
 					<div class="nav-wrap">
-						<nav class="nav-desktop">
-							<ul class="menu-list">
-								<li><a href="/">Home</a></li>
-								<li><a href="/about_us">About Us</a></li>
-								
-								
-								
-								
-								<li><a href="/contact_us">Contact</a></li>
+						<nav>
+							
+							<ul>
+							  <li><a href="/">Home</a></li>
+							  <li><a href="/about_us">About</a></li>
+							  <li><a href="/">Services</a></li>
+							  <li><a href="/contact_us">Contact</a></li>
 							</ul>
-						</nav>
-						<div id="bar">
-							<i class="fas fa-bars"></i>
-						</div>
+						  </nav>
+						
+						
 						<div id="close">
 							<i class="fas fa-times"></i>
 						</div>
