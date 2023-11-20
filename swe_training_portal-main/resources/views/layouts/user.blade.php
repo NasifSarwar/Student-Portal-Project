@@ -79,9 +79,9 @@ body {
   <div id="wrapper">
     <!-- Sidebar -->
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background-color: #7868E6 !important;" href="/user_dashboard">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background: linear-gradient(to right, #ff00cc, #333399) !important;" href="/user_dashboard">
         <div class="sidebar-brand-icon">
-       <h3 style="color: #E6FFFD; font-family:monaco"> <b><i>SWE</i></b> </h3>
+       <h3 style="color: #E6FFFD; font-family:monaco"> <b><i>Student Portal</i></b> </h3>
         </div>
         <div class="sidebar-brand-text mx-3"></div>
       </a>
@@ -145,7 +145,7 @@ body {
     <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
         <!-- TopBar -->
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top" style="background-color: #7868E6 !important;">
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top" style="background: linear-gradient(to right, #ff00cc, #333399) !important;">
           <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
             <i class="ri-menu-fold-fill"></i>
           </button>

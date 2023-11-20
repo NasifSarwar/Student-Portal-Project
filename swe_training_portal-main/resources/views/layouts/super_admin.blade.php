@@ -70,8 +70,20 @@ body {
     font-family: 'SolaimanLipi', Arial, sans-serif !important;
 }
 
+#sidebarToggleTop{
+  text-decoration: none !important;
+}
 
-
+.nav-link:hover, .collapse-item:hover, .dropdown-item:hover{
+  color: #fff !important;
+  background: #6777ef !important;
+}
+.nav-link:hover i{
+  color: #fff !important;
+}
+.card-body:hover{
+  background: #f0fff8 !important;
+}
 </style>
 
 </head>
@@ -80,9 +92,9 @@ body {
   <div id="wrapper">
     <!-- Sidebar -->
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background-color: #7868E6 !important;" href={{ url('/admin_dashboard') }}>
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background: linear-gradient(to right, #ff00cc, #333399) !important;" href={{ url('/admin_dashboard') }}>
         <div class="sidebar-brand-icon">
-       <h3 style="color: #E6FFFD; font-family:monaco"> <b><i>SWE</i></b> </h3>
+       <h3 style="color: #E6FFFD; font-family:monaco"> <b><i>Student Portal</i></b> </h3>
         </div>
         <div class="sidebar-brand-text mx-3"></div>
       </a>
@@ -267,9 +279,9 @@ body {
     <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
         <!-- TopBar -->
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top" style="background-color: #7868E6 !important;">
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top" style="background: linear-gradient(to right, #333399, #ff00cc) !important;">
           <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="ri-menu-fold-fill"></i>
+            <i id="toggleIcon" class="ri-menu-fold-fill"></i>
           </button>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown no-arrow">
@@ -368,11 +380,19 @@ body {
     <i class="fas fa-angle-up"></i>
   </a>
 
+
   <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{url('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{url('vendor/jquery-easing/jquery.easing.min.js')}}"></script>
   <script src="{{url('js/ruang-admin.min.js')}}"></script>
   <script src="{{url('vendor/chart.js/Chart.min.js')}}"></script>
   <script src="{{url('js/demo/chart-area-demo.js')}}"></script>
+  <script>
+  $(document).ready(function() {
+    $('#sidebarToggleTop').on('click', function() {
+        $('#toggleIcon').toggleClass('ri-menu-fold-fill ri-menu-unfold-fill');
+    });
+});
+</script>
 </body>
 </html>
