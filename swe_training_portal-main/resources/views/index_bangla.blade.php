@@ -44,21 +44,21 @@
 							<center><h3>Browse Category</h3></center>
 
 							<div class="row">
-  <div class="col-3 menu">
+  <div class="col-md-6 col-sm-12 menu">
     <ul>
 		@foreach($types as $type)
 	<li><a href="training_category/{{$type->name}}" style="color: #800000"><b>{{$type->name}}</b></a></li>
 	@endforeach
     </ul>
   </div>
-  <div class="col-3 menu">
+  <div class="col-md-6 col-sm-12 menu">
   <ul>
   @foreach($types_second as $seconds)
 	<li><a href="training_category/{{$seconds->name}}" style="color: #800000"><b>{{$seconds->name}}</b></a></li>
 	@endforeach
     </ul>
   </div>
-  <div class="col-3 menu">
+  <div class="col-md-6 col-sm-12 menu">
     <ul>
 	@foreach($types_third as $third)
       <li><a href="training_category/{{$third->name}}" style="color: #800000"><b>{{$third->name}}</b></a></li>
@@ -67,7 +67,7 @@
     </ul>
   </div>
 
-  <div class="col-3 menu">
+  <div class="col-md-6 col-sm-12 menu">
     <ul>
 		@foreach($types_fourth as $fourth)
       <li><a href="training_category/{{$fourth->name}}" style="color: #800000"><b>{{$fourth->name}}</b></a></li>
@@ -84,14 +84,14 @@
 							<center><h3>Special Trainings</h3></center>
 
 							<div class="row">
-  <div class="col-3 menu">
+  <div class="col-md-6 col-sm-12 menu">
     <ul>
 		@foreach($category_first as $item_1)
 	<li><a href="training_category/{{$item_1->name}}" style="color:#800000"><b>{{$item_1->name}}</b></a></li>
 	@endforeach
     </ul>
   </div>
-  <div class="col-3 menu">
+  <div class="col-md-6 col-sm-12 menu">
   <ul>
   @foreach($category_second as $item_2)
 	<li><a href="#" style="color: #800000"><b>{{$item_2->name}}</b></a></li>
@@ -99,7 +99,7 @@
 	
     </ul>
   </div>
-  <div class="col-3 menu">
+  <div class="col-md-6 col-sm-12 menu">
     <ul>
 	@foreach($category_third as $item_3)
 	<li><a href="#" style="color:#800000"><b>{{$item_3->name}}</b></a></li>
@@ -109,7 +109,7 @@
     </ul>
   </div>
 
-  <div class="col-3 menu">
+  <div class="col-md-6 col-sm-12 menu">
     <ul>
      
 	@foreach($category_fourth as $item_4)
